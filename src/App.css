@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+.lead {
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80");
+}
+.lead:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  z-index: 3;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+h1 {
+  font-family: "eight";
+}
+h2 {
+  font-family: "garamond-premier-pro-caption";
+}
+.lead h1,
+.lead h2,
+.lead button {
+  z-index: 4;
+  color: white;
+  text-align: center;
+  z-index: 4;
+}
+.lead h1 {
+  margin: 0;
+  font-size: 4.5em;
+  -webkit-text-stroke: 3px #a5b4fc;
+}
+.lead h2 {
+  font-size: 2.2em;
+}
+button {
+  color: white;
+  background-color: black;
+  border: none;
+  font-family: "eight";
+  font-size: 1.65em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 2em;
+  padding: 0.25em 1.5em;
+  margin-top: 5em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  transform: scale(0.95);
+}
+.lead button {
+  background-color: #a5b4fc;
+}
+button .icon {
+  font-size: 0.8em;
+}
+.reason h1,
+.reason h2 {
+  padding: 0 1.5rem;
+
+  text-align: left;
+}
+.reason h1 {
+  padding-top: 0.5em;
+  font-size: 2.55em;
+  max-width: 95%;
+  white-space: pre-wrap;
+}
+.reason h2 {
+  font-size: 2em;
+}
+.photo-wrapper img {
+  object-fit: contain;
+  height: 15em;
+  border: 5px solid black;
+  border-radius: 2em;
+}
+.h-stack {
+  flex-wrap: wrap;
+  display: flex;
+}
+.reason p {
+  flex: 1;
+  font-family: "pt mono";
+  font-size: 1.35em;
+  padding: 0 1.5rem;
+}
