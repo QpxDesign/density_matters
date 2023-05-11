@@ -7,7 +7,7 @@ body {
 }
 section {
   width: 100vw;
-  height: max(100vh,fit-content);
+  height: max(100vh, fit-content);
   max-width: 100%;
   position: relative;
 }
@@ -121,31 +121,27 @@ button .icon {
 h3 {
   font-family: "pt-mono";
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .photo-wrapper img {
-  height: 10em !important;
+    height: 10em !important;
   }
-
-
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .lead h1 {
     font-size: 4em;
   }
   .photo-wrapper img {
-  height: 7em !important;
+    height: 7em !important;
   }
   .reason h1 {
     font-size: 2em;
   }
-
 }
 .tmc-container {
-  max-width: 90% ;
+  max-width: 90%;
   margin-right: auto;
   padding: 0;
   margin-left: 0;
-
 }
 .h-stack {
   flex-wrap: wrap;
@@ -154,7 +150,7 @@ h3 {
 .reason p {
   flex: 1;
   font-family: "pt-mono";
-  font-size: 1.25em;
+  font-size: 1.35em;
   padding: 0 1.5rem;
   min-width: 40%;
   padding-bottom: 1em;
@@ -178,7 +174,6 @@ h3 {
   max-width: 15em;
   margin-left: auto;
   text-align: left;
-
 }
 .method,
 .results {
@@ -187,7 +182,7 @@ h3 {
   width: 100%;
 }
 .results {
-  padding-right: .5em;
+  padding-right: 0.5em;
   background-color: #3730a3 !important;
 }
 .method.active {
@@ -195,7 +190,6 @@ h3 {
   font-style: italic;
 }
 .method {
-  
   cursor: pointer;
 }
 .hide {
@@ -203,14 +197,13 @@ h3 {
 }
 .h-stack-around {
   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .icon {
   font-size: 1.5em;
   margin: 0;
 }
 @media screen {
-  
 }

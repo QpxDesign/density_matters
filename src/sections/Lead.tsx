@@ -4,8 +4,8 @@ import { BsArrowDownCircleFill } from "react-icons/bs";
 export default function Lead() {
   return (
     <section className="lead">
-      <h1 style={{maxWidth:"90%",margin:"0 auto"}}>density matters</h1>
-      <h2 style={{maxWidth:"90%",margin:"0 auto"}}>
+      <h1 style={{ maxWidth: "90%", margin: "0 auto" }}>density matters</h1>
+      <h2 style={{ maxWidth: "90%", margin: "0 auto" }}>
         learn how changing the shape of your city can help change the course of
         climate change.
       </h2>
@@ -19,7 +19,7 @@ export default function Lead() {
           });
         }}
       >
-        Explore Data <BsArrowDownCircleFill className="icon" />{" "}
+        Learn More <BsArrowDownCircleFill className="icon" />{" "}
       </button>
     </section>
   );
