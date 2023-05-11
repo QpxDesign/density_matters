@@ -1,17 +1,22 @@
+
 import React from "react";
 import "./App.css";
-import Lead from "./sections/Lead";
-import Reason from "./sections/Reason";
-import ReasonsData from "./assets/ReasonsData.json";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useParams,
+} from "react-router-dom";
+import HomePage from "./pages/HomePage"; 
+import SourcePage from "./pages/SourcePage";
 function App() {
   return (
-    <div className="App">
-      <Lead />
-      {ReasonsData.map((item: any, index: any) => {
-        return <Reason data={item} />;
-      })}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/sources" element={<SourcePage />} />
+      </Routes>
+    </Router>
   );
 }
 

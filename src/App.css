@@ -1,12 +1,22 @@
+* {
+  max-width: 100%;
+}
 body {
   margin: 0;
   padding: 0;
 }
 section {
   width: 100vw;
-  height: 100vh;
+  height: max(100vh,fit-content);
   max-width: 100%;
   position: relative;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  text-decoration: underline;
 }
 .lead {
   margin: 0;
@@ -17,6 +27,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  min-height: 100vh;
   align-items: center;
   background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80");
 }
@@ -55,7 +66,7 @@ h2 {
 .lead h1 {
   margin: 0;
   font-size: 4.5em;
-  -webkit-text-stroke: 3px #a5b4fc;
+  -webkit-text-stroke: 2px #a5b4fc;
 }
 .lead h2 {
   font-size: 2.2em;
@@ -107,6 +118,35 @@ button .icon {
   border: 5px solid black;
   border-radius: 2em;
 }
+h3 {
+  font-family: "pt mono";
+}
+@media screen and (max-width:800px) {
+  .photo-wrapper img {
+  height: 10em !important;
+  }
+
+
+}
+@media screen and (max-width:500px) {
+  .lead h1 {
+    font-size: 4em;
+  }
+  .photo-wrapper img {
+  height: 7em !important;
+  }
+  .reason h1 {
+    font-size: 2em;
+  }
+
+}
+.tmc-container {
+  max-width: 90% ;
+  margin-right: auto;
+  padding: 0;
+  margin-left: 0;
+
+}
 .h-stack {
   flex-wrap: wrap;
   display: flex;
@@ -114,6 +154,63 @@ button .icon {
 .reason p {
   flex: 1;
   font-family: "pt mono";
-  font-size: 1.35em;
+  font-size: 1.25em;
   padding: 0 1.5rem;
+  min-width: 40%;
+  padding-bottom: 1em;
+  line-height: 1em;
+}
+.v-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tmc h3 {
+  font-family: "pt mono";
+  font-size: 1.5em;
+  padding: 0.25em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3em;
+  max-width: 15em;
+  margin-left: auto;
+  text-align: left;
+
+}
+.method,
+.results {
+  background-color: #818cf8;
+  color: white;
+  width: 100%;
+}
+.results {
+  padding-right: .5em;
+  background-color: #3730a3 !important;
+}
+.method.active {
+  background-color: #a5b4fc !important;
+  font-style: italic;
+}
+.method {
+  
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.h-stack-around {
+  width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center
+}
+.icon {
+  font-size: 1.5em;
+  margin: 0;
+}
+@media screen {
+  
 }
