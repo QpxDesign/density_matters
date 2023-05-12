@@ -11,13 +11,14 @@ export default function Footer() {
         color: "white",
         flexDirection: "column",
         alignItems: "center",
-        fontSize: ".85em",
+        fontSize: ".65em",
         marginTop: "auto",
         paddingBottom: "8em",
+        textAlign:"center"
       }}
     >
       <h1>made with ❤️ love for the planet 🌎 in washington, dc</h1>
-      <h1>
+      <h1 style={{marginTop:".25em"}}>
         made by{" "}
         <a href="https://quinnpatwardhan.com" style={{ fontStyle: "italic" }}>
           quinnpatwardhan.com
