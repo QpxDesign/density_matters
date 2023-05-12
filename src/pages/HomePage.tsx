@@ -12,6 +12,7 @@ export default function HomePage() {
         return <Reason data={item} />;
       })}
       <a
+        className="view-sources"
         style={{
           position: "fixed",
           left: 0,

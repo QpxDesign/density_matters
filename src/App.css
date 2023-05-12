@@ -125,6 +125,10 @@ h3 {
   .photo-wrapper img {
     height: 10em !important;
   }
+  .view-sources {
+    margin-left: 0.75em !important;
+    margin-bottom: 1em !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .lead h1 {
@@ -204,5 +208,10 @@ h3 {
   font-size: 1.5em;
   margin: 0;
 }
-@media screen {
+footer {
+  overflow-x: scroll;
+}
+footer h1,
+footer h2 {
+  max-width: 90%;
 }

@@ -13,6 +13,7 @@ export default function Footer() {
         alignItems: "center",
         fontSize: ".85em",
         marginTop: "auto",
+        paddingBottom: "8em",
       }}
     >
       <h1>made with ❤️ love for the planet 🌎 in washington, dc</h1>
