@@ -2,6 +2,10 @@ import React from "react";
 import TransportationMethodsCarbon from "../calculators/TransportationMethodsCarbon";
 import PopulationDensity from "../calculators/PopulationDensity";
 import Slideshow from "../calculators/Slideshow";
+import GetLocalReps from "../calculators/GetLocalReps";
+import LocalPlanningBoardMeetings from "../calculators/LocalPlanningBoardMeetings";
+import LocalProjectsMap from "../calculators/LocalProjectsMap"
+
 interface ReasonObj {
   title: string;
   subtitle: string;
@@ -25,11 +29,13 @@ export default function Reason(props: ReasonProps) {
         color: props.data.text_color,
       }}
     >
-      <div style={{ maxWidth: "120em", margin: "0 auto" }}>
+      <div style={{ maxWidth: "120em", margin: "0 auto", paddingBottom: "2em" }}>
         <h1>{props.data.title}</h1>
         <h2>{props.data.subtitle}</h2>
-        <div className="h-stack">
-          <p>{props.data.body}</p>
+        {props.data.features.includes("LocalProjectsMap") ? <LocalProjectsMap /> : ""}
+        <div className="h-stack" >
+          {props.data.body.length !== 0 ? <p>{props.data.body}</p> : <></>}
+
           <div
             className="v-stack pw-c"
             style={{ justifyContent: "flex-start", margin: "0 auto" }}
@@ -47,7 +53,7 @@ export default function Reason(props: ReasonProps) {
                 gap: 0,
               }}
             >
-              <div
+              {props.data.photos.length !== 0 ? <> <div
                 className="photo-row"
                 style={{
                   width: "50em",
@@ -59,18 +65,18 @@ export default function Reason(props: ReasonProps) {
                 <img src={`/images/${props.data.photos[0]}`} />
                 <img src={`/images/${props.data.photos[1]}`} />
               </div>
-              <div
-                className="bump-up-photo photo-row"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "50em",
-                  marginTop: -120,
-                  zIndex: 0,
-                }}
-              >
-                <img src={`/images/${props.data.photos[2]}`} />
-              </div>
+                <div
+                  className="bump-up-photo photo-row"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "50em",
+                    marginTop: -120,
+                    zIndex: 0,
+                  }}
+                >
+                  <img src={`/images/${props.data.photos[2]}`} />
+                </div> </> : <></>}
               {props.data.features.map((item: any, index: any) => {
                 if (item === "TransportationMethodsCarbon") {
                   return <TransportationMethodsCarbon />;
@@ -78,16 +84,23 @@ export default function Reason(props: ReasonProps) {
                 if (item === "PopulationDensity") {
                   return <PopulationDensity />;
                 }
+                if (item === "LocalPlanningBoardMeetings") {
+                  return <LocalPlanningBoardMeetings/>
+                }
+
                 if (item === "Slideshow") {
                   return (
                     <Slideshow
                       data={{
-                        imageNames: ["bar1.png", "pie.png", "bar2.png"],
+                        imageNames: ["AverageMiddleClassLife.svg", "CommuteLength.svg", "DowngradeToWalkToGetFood.svg","TakePublicTransportation.svg","WalkToGetFood.svg"],
                         imageAlts: ["", "", ""],
                       }}
                     />
                   );
-                } else {
+                } 
+                if (item === "GetLocalReps") {
+                  return <GetLocalReps/>
+                }else {
                   return <></>;
                 }
               })}

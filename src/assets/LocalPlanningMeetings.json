@@ -1,0 +1,47 @@
+[
+  {
+    "county_name": "Montgomery County",
+    "planning_board_name": "Montgomery Planning",
+    "schedule_link": "https://montgomeryplanningboard.org/agendas/"
+  },
+  {
+    "county_name": "District of Columbia",
+    "planning_board_name": "DC Office of Planning",
+    "schedule_link": "https://planning.dc.gov/"
+  },
+  {
+    "county_name": "Arlington County",
+    "planning_board_name": "Planning Commission",
+    "schedule_link": "https://www.arlingtonva.us/Government/Commissions-and-Advisory-Groups/Planning-Commission"
+  },
+  {
+    "county_name": "Prince George's County",
+    "planning_board_name": "PG County Planning Board",
+    "schedule_link": "https://www.mncppc.org/812/Prince-Georges-County"
+  },
+  {
+    "county_name": "Loudoun County",
+    "planning_board_name": "Loudon County Planning Commission",
+    "schedule_link": "https://onboard.loudoun.gov/board/3524"
+  },
+  {
+    "county_name": "Frederick County",
+    "planning_board_name": "Frederick County Planning Commission    ",
+    "schedule_link": "https://www.frederickcountymd.gov/7992/Planning-Commission"
+  },
+  {
+    "county_name": "Prince William County",
+    "planning_board_name": "Prince William County Planning Office",
+    "schedule_link": "https://www.pwcva.gov/department/planning-office/planning-commission"
+  },
+  {
+    "county_name": "St. Charles County",
+    "planning_board_name": "St Charles County Planning & Zoning Commission",
+    "schedule_link": "https://www.sccmo.org/AgendaCenter/Planning-Zoning-Commission-11"
+  },
+  {
+    "county_name": "Anne Arundel County",
+    "planning_board_name": "Anne Arundel County Office of Planning and Zoning    ",
+    "schedule_link": "https://www.aacounty.org/departments/planning-and-zoning/"
+  }
+]

@@ -55,6 +55,10 @@ h1 {
 h2 {
   font-family: "garamond-premier-pro-caption";
 }
+h4 {
+  font-family: "pt-mono";
+  font-weight: 100;
+}
 .lead h1,
 .lead h2,
 .lead button {
@@ -71,7 +75,7 @@ h2 {
 .lead h2 {
   font-size: 2.2em;
 }
-button {
+button:not(.map-container button){
   color: white;
   background-color: black;
   border: none;
@@ -121,9 +125,19 @@ button .icon {
 h3 {
   font-family: "pt-mono";
 }
+
 @media screen and (max-width: 800px) {
   .photo-wrapper img {
     height: 10em !important;
+  }
+   .slideshow {
+    height: fit-content !important;
+    width: min(30em,80%);
+    object-fit: contain !important;
+  }
+  .slideshow img {
+    width: 100% !important;
+    height: 100% !important;
   }
   .view-sources {
     margin-left: 0.75em !important;
@@ -136,6 +150,15 @@ h3 {
   }
   .photo-wrapper img {
     height: 7em !important;
+  }
+  .slideshow {
+    height: fit-content !important;
+    width: min(30em,80%);
+    object-fit: contain !important;
+  }
+  .slideshow img {
+    width: 100% !important;
+    height: 100% !important;
   }
   .reason h1 {
     font-size: 2em;
@@ -156,6 +179,7 @@ h3 {
   font-family: "pt-mono";
   font-size: 1.35em;
   padding: 0 1.5rem;
+  padding-right: 0;
   min-width: 40%;
   padding-bottom: 1em;
 }
@@ -214,4 +238,30 @@ footer {
 footer h1,
 footer h2 {
   max-width: 90%;
+}
+.list-item {
+  padding: .25em .65em;
+  gap:.5em;
+  align-items: center;
+  padding-bottom: 0;
+}
+.map-container {
+  overflow: hidden !important;
+  height: 70vh !important;
+  width: min(80%) !important;
+  margin: 0 auto
+}
+
+.mapboxgl-popup-close-button {
+  aspect-ratio: 1/1 !important;
+  background-color: #f97316 !important;
+  font-size: 20px !important;
+  position: absolute;
+  z-index: 999;
+  width: 25px;
+  height: 25px;
+  padding: 0px !important;
+  border-radius: 10000% !important;
+  color: white !important;
+  fill: #f97316 !important;
 }

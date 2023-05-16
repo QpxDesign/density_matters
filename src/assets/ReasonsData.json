@@ -24,6 +24,33 @@
     "background_color": "#a855f7",
     "text_color":"white",
     "photos": ["georgetown.jpg", "sanfran.jpg", "brooklyn.jpg"],
-    "features": [""]
+    "features": ["Slideshow"]
+  }, {
+    "title": "Solution #1 - Contact Your Representatives",
+    "subtitle": "as always, democracy is the best solution",
+    "body": "",
+    "background_color": "#d946ef",
+    "text_color":"white",
+    "photos": [],
+    "features": ["GetLocalReps"]
+  },
+  {
+    "title": "Solution #2 - Attend a Planning Meeting",
+    "subtitle": "voice your concerns to the right people",
+    "body": "",
+    "background_color": "#c026d3",
+    "text_color":"white",
+    "photos": [],
+    "features": ["LocalPlanningBoardMeetings"]
+  },
+  {
+    "title": "Solution #3 - Explore Local Higher-Density Developments",
+    "subtitle": "new high-density developments are popping up all around the dmv area",
+    "body": "",
+    "background_color": "#a21caf",
+    "text_color":"white",
+    "photos": [],
+    "features": ["LocalProjectsMap"]
   }
+
 ]

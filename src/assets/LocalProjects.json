@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Pike & Rose",
+    "lat": 39.05032,
+    "lng": -77.11674,
+    "type": "Retail, Residental, and Office Space",
+    "status": "Partially Completed / More Development Happening",
+    "notes": "Located next to the White Flint (now North Bethesda) Metro Station",
+    "polygon_data": []
+  },
+  {
+    "name": "Crystal City/Amazon HQ 2",
+    "lat": 33.85800,
+    "lng": -77.05237,
+    "type": "Office Space, Housing, Retail",
+    "status": "Partially Completed / More Development Happening (although Amazon has paused construction of their HQ2)",
+    "notes": "Located next to several Metro stations, a VRE Station, and BRT (bus rapid transit) stops",
+    "polygon_data": []
+  },
+  {
+    "name": "Reston Station",
+    "lat": 38.94864,
+    "lng": -77.33886,
+    "type": "Office Space, Housing, Retail",
+    "status": "Completed",
+    "notes": "Located next to a Metro station",
+    "polygon_data": []
+  },
+  {
+    "name": "Downtown Bethesda",
+    "lat": 33.98433,
+    "lng": -77.09501,
+    "type": "Office Space, Housing, Retail",
+    "status": "Partially Completed / More Development Happening",
+    "notes":"Located next to a Metro station and a future Purple Line stop",
+    "polygon_data": []
+  },
+  {
+    "name": "Congress Heights Metro Station Project",
+    "lat": 38.84506,
+    "lng": -76.98771,
+    "type": "Office Space, Affordable Housing, Retail",
+    "status": "In Planning",
+    "notes":"Located next to a Metro station",
+    "polygon_data": []
+  }
+]
