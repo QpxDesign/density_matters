@@ -249,7 +249,8 @@ footer h2 {
   overflow: hidden !important;
   height: 70vh !important;
   width: min(80%) !important;
-  margin: 0 auto
+  margin: 0 auto;
+  margin-top: 1em !important;
 }
 
 .mapboxgl-popup-close-button {
