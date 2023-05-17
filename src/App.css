@@ -181,7 +181,7 @@ h3 {
   font-family: "pt-mono";
   font-size: 1.35em;
   padding: 0 1.5rem;
-  padding-right: 0;
+  padding-right: .5rem;
   min-width: 40%;
   padding-bottom: 1em;
 }
@@ -288,10 +288,11 @@ footer h2 {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1e/WMATA_Metro_Logo.svg") !important;
 }
 .buildingsIcon {
-  height: 2em;
-  width: 2em;
+  height: 4em;
+  width: 4em;
   aspect-ratio: 1/1;
   background-size: 100%;
   content: "";
-  background-image: url("https://em-content.zobj.net/thumbs/240/apple/354/building-construction_1f3d7-fe0f.png") !important;
+  background-repeat: no-repeat;
+  background-image: url("../public/images/BuildingsIcon.svg") !important;
 }
