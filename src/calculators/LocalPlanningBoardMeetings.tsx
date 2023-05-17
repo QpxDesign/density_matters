@@ -42,7 +42,7 @@ export default function LocalPlanningBoardMeetings() {
                     return <div className='v-stack' style={{ width: "100%", background: "#818cf8", justifyContent: "flex-start", alignItems: "flex-start", paddingBottom: ".5em" }}>
                         <h3 className='h-stack list-item'>{item?.county_name}</h3>
                         <h4 className='h-stack list-item'>{item.planning_board_name}</h4>
-                        <h4 className='h-stack list-item'><a href={item.schedule_link} target="_blank" style={{ justifyContent: 'center', alignItems: "center" }} className='h-stack'>Website <BsLink45Deg style={{ marginLeft: ".25em" }} /></a></h4>
+                        <h4 className='h-stack list-item'><a href={item.schedule_link} target="_blank" style={{ justifyContent: 'center', alignItems: "center" }} className='h-stack'>Meeting Schedule <BsLink45Deg style={{ marginLeft: ".25em" }} /></a></h4>
                     </div> 
                 })}</div>
             <div className="h-stack-around" >

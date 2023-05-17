@@ -18,6 +18,22 @@ export default function GetLocalReps() {
       fetchReps()
     }
   }, [zipcode])
+  function getOfficeFromRepName(name : string) : any {
+    // get index of rep 
+    var ans = "error"
+    repData.officials.forEach((rep : any, index : any) => {
+      if (rep.name === name) {
+        repData.offices.forEach((office : any) => {
+          if (office.officialIndices.includes(index)) {
+            ans = office.name
+          }
+          
+        });
+      }
+    });
+    return ans
+
+  }
   return (
     //https://developers.google.com/civic-information/docs/v2 (DOCS FOR GOOGLE CIVIC INFORMATION API)
     // API KEY for GOOGLE API: AIzaSyBaV7HmsR_6pO_rTj5hqcpUFHc1c-YVYxk
@@ -33,7 +49,7 @@ export default function GetLocalReps() {
         {zipcode.length === 5 ? repData?.officials?.map((item: any, index: any) => {
           return <div className='v-stack' style={{ width: "100%", background: "#818cf8", justifyContent: "flex-start", alignItems: "flex-start", paddingBottom: ".5em" }}>
             <h3 className='h-stack list-item'>{item?.name}</h3>
-            <h4 className='h-stack list-item'>{repData.offices[index]?.name}</h4>
+            <h4 className='h-stack list-item'>{getOfficeFromRepName(item.name)}</h4>
             <h4 className='h-stack list-item'>{item?.phones !== undefined ? item?.phones[0] : ""} · <a href={item?.urls !== undefined ? item?.urls[0] : ""} target="_blank" style={{ justifyContent: 'center', alignItems: "center" }} className='h-stack'>Website <BsLink45Deg style={{ marginLeft: ".25em" }} /></a></h4>
           </div>
         }) : ""}</div>

@@ -1,5 +1,6 @@
 * {
   max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -9,6 +10,7 @@ section {
   width: 100vw;
   height: max(100vh, fit-content);
   max-width: 100%;
+  z-index: 0;
   position: relative;
 }
 a {
@@ -75,7 +77,7 @@ h4 {
 .lead h2 {
   font-size: 2.2em;
 }
-button:not(.map-container button){
+button:not(.map-container button) {
   color: white;
   background-color: black;
   border: none;
@@ -130,9 +132,9 @@ h3 {
   .photo-wrapper img {
     height: 10em !important;
   }
-   .slideshow {
+  .slideshow {
     height: fit-content !important;
-    width: min(30em,80%);
+    width: min(30em, 80%);
     object-fit: contain !important;
   }
   .slideshow img {
@@ -153,7 +155,7 @@ h3 {
   }
   .slideshow {
     height: fit-content !important;
-    width: min(30em,80%);
+    width: min(30em, 80%);
     object-fit: contain !important;
   }
   .slideshow img {
@@ -240,8 +242,8 @@ footer h2 {
   max-width: 90%;
 }
 .list-item {
-  padding: .25em .65em;
-  gap:.5em;
+  padding: 0.25em 0.65em;
+  gap: 0.5em;
   align-items: center;
   padding-bottom: 0;
 }
@@ -255,14 +257,41 @@ footer h2 {
 
 .mapboxgl-popup-close-button {
   aspect-ratio: 1/1 !important;
-  background-color: #f97316 !important;
+  background-color: black !important;
   font-size: 20px !important;
   position: absolute;
   z-index: 999;
   width: 25px;
   height: 25px;
+
   padding: 0px !important;
   border-radius: 10000% !important;
   color: white !important;
   fill: #f97316 !important;
+}
+.popup-box {
+  color: black;
+}
+.popup-box h2 {
+  padding: 0.5em 0;
+  text-align: center;
+}
+.popup-box h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.75em;
+}
+.stationIcon {
+  height: 2em;
+  width: 2em;
+  aspect-ratio: 1/1;
+  background-size: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1e/WMATA_Metro_Logo.svg") !important;
+}
+.buildingsIcon {
+  height: 2em;
+  width: 2em;
+  aspect-ratio: 1/1;
+  background-size: 100%;
+  content: "";
+  background-image: url("https://em-content.zobj.net/thumbs/240/apple/354/building-construction_1f3d7-fe0f.png") !important;
 }
