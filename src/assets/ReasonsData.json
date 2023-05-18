@@ -5,7 +5,7 @@
     "body": "Although Electric Cars do have a lower environmental impact than gas cars, they still are worse than all forms of public transportation expect for gas-powered busses. The truth is, cars exist as a byproduct of suburbanization. Cars themselves take up a lot of space (often too much space, as I drive a five-seater sedan to school everyday all alone), and they exist as a result of the vast amounts of land everyone occupies with their massive homes and yards. This is evident in downtown New York City, where a car can be around the size of an apartment, and where parking spots can go for hundreds or thousands of dollars a month. The distance from the southern tip of Manhattan to central park is around 5 miles, a distance that can easily be biked, walked, or ran. That space houses millions of people, and they can get around using solely zero impact methods (like biking or walking), or very low impact methods (like taking the subway). Imagine if your neighborhood had a bus or train stop at nearly every corner - it would not be feasible to take public transportation. The bus/train would have to make thousands of stops and journeys would take days. Car-dependent cities often have longer commute times, as everyone has to drive a massive car and thus they take up a much larger area. Since transportation is the single largest source of greenhouse gas emissions in the United States¹, increasing density and reducing car usage would make a huge difference in the fight against climate change. ",
     "background_color": "#e9d5ff",
     "text_color":"black",
-    "photos": ["MarcTrain.jpg", "PurpleLine.jpg", "Metro.jpg"],
+    "photos": ["MarcTrain.webp", "PurpleLine.webp", "Metro.webp"],
     "features": ["TransportationMethodsCarbon"]
   },
   {
@@ -14,7 +14,7 @@
     "body": "The number one cause of species extinction is habitat loss and fragmentation. Often this land is used for agriculture, forestry, or grazing, but increasingly, it’s being used for human development. In 1960, around 27 million acres of land was used for ‘urban areas. By 2012, that number reached 70 million acres.³ This is due to the dramatic increase in population in the last century, as the population of the United States increased from around 180 million people in 1960 to over 330 million people in 2012.⁴ More people need to use more land, and how they use that land determines how much habitat loss occurs. If every human has their own big house and a massive yard, like is the case in Houston, then humans will take up more space overall. If everyone lives like those in Georgetown DC, in cramped townhouses with no yard, they will take up less space and less habitat loss will occur. Similarly, Habitat fragmentation is also a problem of low density. Habitat fragmentation often occurs when roads are built in the middle of an ecosystem, splitting the ecosystems into two parts. This makes it hard for species to reach the other side, reducing reproduction, and often causing species to become extinct in that area. If every human had the space of the average Houston resident, then it would take around 2.4 million square miles (two Indias) of land to house every human. However, if every human had the space of the average Georgetown resident,  then it would take around 600,000 square miles (two Chiles) of land to house every human. If we want to reduce our impact on our ecosystems, building denser would help endangered organisms and prevent species extinction. ",
     "background_color": "#c084fc",
     "text_color":"black",
-    "photos": ["georgetown.jpg", "sanfran.jpg", "brooklyn.jpg"],
+    "photos": ["georgetown.webp", "sanfran.webp", "brooklyn.webp"],
     "features": ["PopulationDensity"]
   },
   {
@@ -23,7 +23,7 @@
     "body": "Living in Suburbs both directly and indirectly impacts the environment. It has direct impacts, like increase car reliance and habitat disruption. But it also has a social cost on the environment, the environmental justice movement, and the fight against climate change. Living in suburbs causes people to leave the house less. They can stay inside of buildings or cars their entire lives if they so please. This causes a disconnect from the environment. They won’t notice changes in the environment, like increases in temperature or shifting weather patterns. Their house will remain what ever temperature they set their thermostat to. This causes them to become blind to climate change, and prevents them from understanding scope of the problem. Increasing density also increases how often people walk or bike to places, which in turn increases how much they care about the environment. Denser cities also force people together, which allows for much more social discourse about issues like climate change.",
     "background_color": "#a855f7",
     "text_color":"white",
-    "photos": ["georgetown.jpg", "sanfran.jpg", "brooklyn.jpg"],
+    "photos": ["georgetown.webp", "sanfran.webp", "brooklyn.webp"],
     "features": ["Slideshow"]
   }, {
     "title": "Solution #1 - Contact Your Representatives",

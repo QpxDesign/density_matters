@@ -39,11 +39,11 @@ export default function LocalProjectsMap() {
                 showUserHeading: true,
             })
         );
-        
+
         LocalProjectData.notable_stations.forEach(element => {
             var stationIcon = document.createElement("div")
             stationIcon.className = "stationIcon"
-            var marker = new mapboxgl.Marker({element:stationIcon})
+            var marker = new mapboxgl.Marker({ element: stationIcon })
                 .setLngLat([element.lng, element.lat])
                 .setPopup(
                     new mapboxgl.Popup({
@@ -54,7 +54,7 @@ export default function LocalProjectsMap() {
                             <h3>${element.name}</h3>
                             <h4>${element.notes}</h4>
                             </div>`
-                            
+
                         )
                 ).addTo(map.current);
 
@@ -63,7 +63,7 @@ export default function LocalProjectsMap() {
         LocalProjectData.developments.forEach(element => {
             var buildingsIcon = document.createElement("div")
             buildingsIcon.className = "buildingsIcon"
-            var marker = new mapboxgl.Marker({element: buildingsIcon})
+            var marker = new mapboxgl.Marker({ element: buildingsIcon })
                 .setLngLat([element.lng, element.lat])
                 .setPopup(
                     new mapboxgl.Popup({
@@ -171,7 +171,7 @@ export default function LocalProjectsMap() {
                 },
                 paint: {
                     "line-color": "#59178a",
-                    "line-width": 8,
+                    "line-width": 5,
                 },
             });
             map.current.addLayer({
@@ -184,7 +184,7 @@ export default function LocalProjectsMap() {
                 },
                 paint: {
                     "line-color": "#FFD100",
-                    "line-width": 8,
+                    "line-width": 5,
                 },
             });
             map.current.addLayer({
@@ -197,7 +197,7 @@ export default function LocalProjectsMap() {
                 },
                 paint: {
                     "line-color": "#BF0D3E",
-                    "line-width": 8,
+                    "line-width": 5,
                 },
             })
             map.current.addLayer({
@@ -210,7 +210,7 @@ export default function LocalProjectsMap() {
                 },
                 paint: {
                     "line-color": "#009CDE",
-                    "line-width": 8,
+                    "line-width": 5,
                 },
             })
             map.current.addLayer({
@@ -223,7 +223,7 @@ export default function LocalProjectsMap() {
                 },
                 paint: {
                     "line-color": "#00B140",
-                    "line-width": 8,
+                    "line-width": 5,
                 },
             })
             map.current.addLayer({
@@ -236,7 +236,7 @@ export default function LocalProjectsMap() {
                 },
                 paint: {
                     "line-color": "#ED8B00",
-                    "line-width": 8,
+                    "line-width": 5,
                 },
             })
             map.current.addLayer({
@@ -249,7 +249,7 @@ export default function LocalProjectsMap() {
                 },
                 paint: {
                     "line-color": "#919D9D",
-                    "line-width": 8,
+                    "line-width": 5,
                 },
             })
 

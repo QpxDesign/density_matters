@@ -16,7 +16,7 @@ export default function PopulationDensity() {
     const [reversed, setReversed]: any = useState(false)
     return (
         <div style={{ width: "min(30em,90%)", background: "#a5b4fc", margin: "1em auto", }}>
-            <div className="h-stack-around">
+            <div className="h-stack-around" style={{background:"red"}}>
                 <label style={{ padding: '.65em' }}><h3>{reversed ? "Enter a Population (in hundreds of thousands)" : "Enter the size of your yard (in acres):"}</h3></label>
                 <input style={{ width: "25%", border: "none", fontSize: "1.5em", padding: ".25em .5em", fontFamily: "pt-mono", marginRight: ".5em" }} type="number" onChange={(e) => setYardSize(e.target.value)} />
                 <button style={{ fontSize: "1em", margin: 0, marginRight: ".25em" }} onClick={() => {
@@ -25,7 +25,7 @@ export default function PopulationDensity() {
                     }
                 }}>REVERSE</button>
             </div>
-            {reversed ? <><div className="h-stack-around" style={{ background: "#818cf8", width: "100%" }}><h3 style={{ padding: '.65em', gap: '.5em', alignItems: "center" }} className='h-stack'>
+            {reversed ? <><div className="h-stack-around" style={{ background: "#818cf8", width: "100%",margin:"0 auto" }}><h3 style={{ padding: '.65em', gap: '.5em', alignItems: "center" }} className='h-stack'>
                 <BsHouseFill className='icon' />Density of Houston⁶</h3>
                 <h3 style={{ marginRight: ".75em", fontWeight: 100 }}>{Math.round(((yardSize * 100_000) / HOUSTON_POP_DENSITY / DC_SQUARE_MILES) * 100)/100} DCs</h3>
             </div>

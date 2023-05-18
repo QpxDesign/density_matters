@@ -7,7 +7,7 @@
       "type": "Retail, Residental, and Office Space",
       "status": "Partially Completed / More Development Happening",
       "notes": "Located next to the White Flint (now North Bethesda) Metro Station",
-      "image_slug":"PikeRose.jpg"
+      "image_slug":"PikeRose.webp"
 
     },
     {
@@ -26,7 +26,7 @@
       "type": "Office Space, Housing, Retail",
       "status": "Completed",
       "notes": "Located next to a Metro station",
-      "image_slug":"RESTONSTATION.jpg"
+      "image_slug":"RESTONSTATION.webp"
     },
     {
       "name": "Downtown Bethesda",
@@ -35,7 +35,7 @@
       "type": "Office Space, Housing, Retail",
       "status": "Partially Completed / More Development Happening",
       "notes": "Located next to a Metro station and a future Purple Line stop",
-      "image_slug":"Bethesda.jpg"
+      "image_slug":"Bethesda.webp"
     },
     {
       "name": "Congress Heights Metro Station Project",
@@ -44,7 +44,7 @@
       "type": "Office Space, Affordable Housing, Retail",
       "status": "In Planning",
       "notes": "Located next to a Metro station",
-      "image_slug":"CongressHeights.jpg"
+      "image_slug":"CongressHeights.webp"
     }
   ],
   "transit_lines": {

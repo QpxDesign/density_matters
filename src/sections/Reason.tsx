@@ -46,7 +46,7 @@ export default function Reason(props: ReasonProps) {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                alignItems: "flex-end",
+                alignItems: "center",
                 position: "relative",
                 margin: 0,
 
