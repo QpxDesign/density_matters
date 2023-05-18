@@ -13,26 +13,26 @@ interface SlideshowProps {
 export default function Slideshow(props: SlideshowProps) {
     const [activeImageIndex, setActiveIndexImage] = useState(0)
     return (
-        <div style={{ margin: "0 auto", display: "flex", justifyContent: 'center', position: "relative", overflow:"visible"}} className="slideshow">
-            <IoIosArrowDropleftCircle style={{ position: "absolute", left: -50, top: '50%', fontSize: "5em", color: "#ec4899", background: "white", padding: 0, borderRadius: "100em",cursor:"pointer",zIndex:999}} role="button" onClick={() => {
+        <div style={{ margin: "0 auto", display: "flex", justifyContent: 'center', position: "relative", overflow: "visible" }} className="slideshow">
+            <IoIosArrowDropleftCircle style={{ position: "absolute", left: -50, top: '50%', fontSize: "5em", color: "#ec4899", background: "white", padding: 0, borderRadius: "100em", cursor: "pointer", zIndex: 999 }} role="button" onClick={() => {
                 if (activeImageIndex === 0) {
-                    setActiveIndexImage(props.data.imageNames.length-1)
+                    setActiveIndexImage(props.data.imageNames.length - 1)
                 } else {
-                    setActiveIndexImage(activeImageIndex-1)
+                    setActiveIndexImage(activeImageIndex - 1)
                 }
             }} />
             <div className='v-stack'>
 
-           
-            <img  src={`/images/${props.data.imageNames[activeImageIndex]}`} alt={props.data.imageAlts[activeImageIndex]} style={{ border: "none", objectFit: "contain", borderRadius: "0", marginTop: "1em", height: "min(20em,60vh)", paddingBottom: "1em", }} />
-            <IoIosArrowDroprightCircle style={{ position: "absolute", right: -50, top: '50%', fontSize: "5em", color: "#ec4899", background: "white", padding: 0, borderRadius: "100em",cursor:"pointer",zIndex:999 }} role="button" onClick={() => {
-                     if (activeImageIndex === props.data.imageNames.length-1) {
+
+                <img src={`/images/${props.data.imageNames[activeImageIndex]}`} alt={props.data.imageAlts[activeImageIndex]} style={{ border: "none", objectFit: "contain", borderRadius: "0", marginTop: "1em", height: "min(20em,60vh)", paddingBottom: "1em", }} />
+                <IoIosArrowDroprightCircle style={{ position: "absolute", right: -50, top: '50%', fontSize: "5em", color: "#ec4899", background: "white", padding: 0, borderRadius: "100em", cursor: "pointer", zIndex: 999 }} role="button" onClick={() => {
+                    if (activeImageIndex === props.data.imageNames.length - 1) {
                         setActiveIndexImage(0)
                     } else {
-                        setActiveIndexImage(activeImageIndex+1)
+                        setActiveIndexImage(activeImageIndex + 1)
                     }
-            }}/>
-            <h3>From 50 Student Responses</h3></div>
+                }} />
+                <h3 style={{ zIndex: 999999, position: "absolute", bottom: 0, margin: 0, background: "#9333ea", padding: ".25em .75em", borderRadius: "5em" }}>From 50 Student Responses</h3></div>
 
         </div>
     )
