@@ -16,7 +16,7 @@ export default function PopulationDensity() {
     const [reversed, setReversed]: any = useState(false)
     return (
         <div style={{ width: "min(30em,90%)", background: "#a5b4fc", margin: "1em auto", }}>
-            <div className="h-stack-around" style={{background:"red"}}>
+            <div className="h-stack-around" >
                 <label style={{ padding: '.65em' }}><h3>{reversed ? "Enter a Population (in hundreds of thousands)" : "Enter the size of your yard (in acres):"}</h3></label>
                 <input style={{ width: "25%", border: "none", fontSize: "1.5em", padding: ".25em .5em", fontFamily: "pt-mono", marginRight: ".5em" }} type="number" onChange={(e) => setYardSize(e.target.value)} />
                 <button style={{ fontSize: "1em", margin: 0, marginRight: ".25em" }} onClick={() => {
